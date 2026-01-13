@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurélie & Yves — Mariage</title>
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111;
+      --muted:#555;
+      --border:#e9e9e9;
+      --accent:#111;
+      --radius:18px;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    a{ color:inherit; }
+    .container{ max-width: 950px; margin:0 auto; padding: 18px; }
+
+    /* NAV */
+    header{
+      position:sticky;
+      top:0;
+      z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,.92);
+      border-bottom:1px solid var(--border);
+    }
+    .nav{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      padding:14px 18px;
+      justify-content:center;
+      font-weight:600;
+      font-size:14px;
+    }
+    .nav a{
+      text-decoration:none;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid transparent;
+    }
+    .nav a:hover{ border-color: var(--border); }
+
+    /* HERO */
+    .hero{
+      padding:40px 0 12px;
+      text-align:center;
+    }
+    .hero h1{ font-size:44px; margin:0 0 10px; }
+    .hero h2{ font-size:28px; margin:0 0 10px; font-weight:700; }
+    .hero p{ margin:0; color:var(--muted); }
+
+    .card{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      padding:18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.04);
+    }
+
+    section{ padding: 22px 0; }
+    .section-title{
+      font-size:22px;
+      text-align:center;
+      margin: 0 0 12px;
+      font-weight:800;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+    }
+    @media(min-width:900px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+    }
+
+    .sub{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+      text-align:center;
+    }
+
+    .info h3{ margin:0; font-size:18px; }
+    .info p{ margin:6px 0; color:var(--muted); }
+    .pill{
+      display:inline-block;
+      margin-top:10px;
+      font-size:13px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      text-decoration:none;
+    }
+
+    /* FORM */
+    label{ font-size:13px; font-weight:700; display:block; margin-bottom:6px; }
+    input, select, textarea{
+      width:100%;
+      padding:12px 12px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      font-size:14px;
+      outline:none;
+    }
+    textarea{ min-height: 100px; resize: vertical; }
+    .btn{
+      margin-top:12px;
+      width:100%;
+      padding:12px 14px;
+      border:none;
+      border-radius:12px;
+      background: var(--accent);
+      color:#fff;
+      font-weight:800;
+      cursor:pointer;
+    }
+    .btn:hover{ opacity:.92; }
+
+    /* UPLOAD */
+    .drop{
+      border:2px dashed var(--border);
+      border-radius: var(--radius);
+      padding:22px;
+      text-align:center;
+      color:var(--muted);
+      cursor:pointer;
+    }
+    .small{ font-size:13px; color:var(--muted); }
+
+    footer{
+      padding:30px 0 40px;
+      text-align:center;
+      color:var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="#apropos">✨ A propos de nous ✨</a>
+    <a href="#infos">✨ Informations ✨</a>
+    <a href="#defis">✨ Défis Photos ✨</a>
+    <a href="#fin">✨ Et ils vécurent heureux ✨</a>
+    <a href="#rsvp">✨Confirmation de présence✨</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Save the date</h2>
+    <div class="card" style="margin-top:14px;">
+      <h1><span id="days">0</span> Days until our wedding</h1>
+      <p>Stay tuned <strong>July 27, 2024</strong></p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="apropos">
+    <h2 class="section-title">✨ A propos de nous ✨</h2>
+    <div class="card">
+      <p>
+        Dans les méandres de la toile virtuelle, Dieu tissa les fils du destin, reliant deux âmes éloignées
+        par la distance mais unies par un désir commun. En 2021, un simple message devint le point de départ
+        d'une histoire d'amour sacrée.
+      </p>
+      <p>
+        À travers des conversations numériques, des échanges d'idées et des rires partagés, nous avons découvert
+        un lien profond, nourri par l'amour divin.
+      </p>
+      <p>
+        Les années passants mais surtout guidés par la main de Dieu, notre relation a fleuri, transcendant les
+        frontières virtuelles pour s'épanouir dans le monde réel.
+      </p>
+      <p>
+        Aujourd'hui, alors que nous nous engageons à marcher côte à côte sur le chemin de la vie, nous vous invitons,
+        chers amis et familles, à vous joindre à nous pour célébrer cet amour béni.
+      </p>
+      <p>
+        Venez partager ce moment de bonheur et de grâce avec nous et soyez témoins de l'aboutissement de notre voyage,
+        un voyage marqué par la foi, la patience et la détermination.
+      </p>
+    </div>
+  </section>
+
+  <!-- INFOS -->
+  <section id="infos">
+    <h2 class="section-title">✨ Informations ✨</h2>
+    <p class="sub">Les détails de la journée</p>
+
+    <div class="grid">
+      <div class="card info">
+        <h3>Cérémonie civile</h3>
+        <p><strong>July 27, 2024</strong> — 14:30</p>
+        <p>Mairie de Saint-Maur, 94100 Saint-Maur-des-Fossés, France</p>
+        <a class="pill" href="https://www.google.com/maps/search/?api=1&query=Mairie+de+Saint-Maur+94100" target="_blank">Voir la carte</a>
+        <a class="pill" href="#" onclick="alert('Ajout au calendrier à implémenter (Google/ICS).');return false;">Ajouter au calendrier</a>
+      </div>
+
+      <div class="card info">
+        <h3>Cocktail dinatoire</h3>
+        <p><strong>July 27, 2024</strong> — 17:00 - 02:00</p>
+        <p>Saint-Maur-des-Fossés, France</p>
+        <a class="pill" href="https://www.google.com/maps/search/?api=1&query=Saint-Maur-des-Fosses" target="_blank">Voir la carte</a>
+        <a class="pill" href="#" onclick="alert('Ajout au calendrier à implémenter (Google/ICS).');return false;">Ajouter au calendrier</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp">
+    <h2 class="section-title">✨Confirmation de présence✨</h2>
+
+    <div class="card">
+      <p>
+        Nous serons honorés et heureux de votre présence à notre cérémonie et notre réception de mariage !
+        Pour une meilleure organisation, veillez à bien nous confirmer votre présence.
+      </p>
+      <p>
+        N’hésitez pas à nous transmettre vos vœux et votre amour via le livre d'or ci-dessous. Nous avons hâte de vous lire.
+      </p>
+      <p style="text-align:right; font-weight:700;">Avec tout notre amour,</p>
+
+      <form onsubmit="submitRSVP(event)">
+        <div class="grid" style="grid-template-columns:1fr 1fr;">
+          <div>
+            <label>Prénom *</label>
+            <input required id="prenom" placeholder="Ex: Jean" />
+          </div>
+          <div>
+            <label>Nom de famille *</label>
+            <input required id="nom" placeholder="Ex: Dupont" />
+          </div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <label>Serez-vous présent ?</label>
+          <select required id="presence">
+            <option value="">-- Choisir --</option>
+            <option>Cérémonie civile uniquement</option>
+            <option>Cocktail dinatoire uniquement</option>
+            <option>Cérémonie civile et cocktail dinatoire</option>
+            <option>Désolé(e), je ne pourrai pas</option>
+          </select>
+        </div>
+
+        <div style="margin-top:12px;">
+          <label>❤️ Livre d'or ❤️</label>
+          <textarea id="message" placeholder="Votre message..."></textarea>
+        </div>
+
+        <button class="btn" type="submit">Soumettre</button>
+        <p class="small" id="rsvpResult" style="margin-top:10px;"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- DRESS CODE -->
+  <section>
+    <h2 class="section-title">✨ Code vestimentaire ✨</h2>
+    <div class="card">
+      <p>
+        Préparez vous à rayonner et à vivre une journée de pure élégance estivale sous le thème :
+        <strong>Summer chic, Summer love.</strong>
+      </p>
+      <p>
+        Laissez votre style refléter la beauté de l'été, les couleurs de la douceur et de l'amour,
+        la brillance du soleil, la sophistication et le charme d'une soirée glamour.
+      </p>
+      <p><strong>Oui aux couleurs vives d'été !</strong></p>
+    </div>
+  </section>
+
+  <!-- PHOTOS -->
+  <section id="defis">
+    <h2 class="section-title">✨ Défis Photos ✨</h2>
+    <div class="card">
+      <p>
+        Attrapez votre smartphone et aidez nous à saisir l’ambiance de la journée en prenant vos plus beaux clichés.
+        Votre mission si vous l'acceptez sera de filmer et déposer ci-dessous des photos :
+      </p>
+
+      <ul>
+        <li>Des mariés qui sourient</li>
+        <li>D’un bisou des mariés</li>
+        <li>Des invités de votre table</li>
+        <li>D’un couple qui danse</li>
+        <li>De la pièce montée</li>
+      </ul>
+
+      <p>Nous sommes impatients de recevoir vos belles œuvres.</p>
+
+      <input id="photos" type="file" accept="image/*" multiple hidden />
+      <div class="drop" onclick="document.getElementById('photos').click()">
+        Essayez de glisser des photos ici, ou cliquez pour sélectionner des fichiers à télécharger.
+      </div>
+
+      <p class="small" id="photoInfo" style="margin-top:10px;"></p>
+      <button class="btn" type="button" onclick="uploadPhotos()">Télécharger</button>
+      <p class="small" id="uploadResult"></p>
+    </div>
+  </section>
+
+  <!-- END -->
+  <section id="fin">
+    <h2 class="section-title">✨ Et ils vécurent heureux ✨</h2>
+    <div class="card" style="text-align:center;">
+      <h3 style="margin:0 0 8px;">A&Y : From miles apart to forever together</h3>
+      <p style="margin:0;">
+        Proverbe 18:22 Celui qui trouve une femme a trouvé le bonheur, c’est une faveur qu’il a reçue de l’Eternel.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    Made with Wedding Planning Assistant (clone)
+  </footer>
+
+</main>
+
+<script>
+  // Countdown (days)
+  const weddingDate = new Date("2024-07-27T00:00:00");
+  function updateCountdown(){
+    const now = new Date();
+    const diff = weddingDate - now;
+    const days = Math.max(0, Math.ceil(diff / (1000*60*60*24)));
+    document.getElementById("days").textContent = days;
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 60_000);
+
+  // RSVP demo (local only)
+  function submitRSVP(e){
+    e.preventDefault();
+    const prenom = document.getElementById("prenom").value.trim();
+    const nom = document.getElementById("nom").value.trim();
+    const presence = document.getElementById("presence").value;
+    const message = document.getElementById("message").value.trim();
+
+    // Ici tu peux envoyer vers ton backend
+    document.getElementById("rsvpResult").textContent =
+      `Merci ${prenom} ${nom} ✅ Réponse enregistrée : "${presence}"` + (message ? " + message livre d'or." : ".");
+  }
+
+  // Photo upload demo
+  document.getElementById("photos").addEventListener("change", () => {
+    const files = document.getElementById("photos").files;
+    const max = 30;
+    const left = Math.max(0, max - files.length);
+    document.getElementById("photoInfo").textContent =
+      `Limite: ${max} photos. Sélectionnées: ${files.length}. Restantes: ${left}. (20MB max / photo)`;
+  });
+
+  function uploadPhotos(){
+    const files = document.getElementById("photos").files;
+    if(!files.length){
+      document.getElementById("uploadResult").textContent = "Aucune photo sélectionnée.";
+      return;
+    }
+    // TODO: upload réel (API / Firebase / Supabase / serveur)
+    document.getElementById("uploadResult").textContent =
+      "✅ Upload simulé. (Pour un vrai upload, il faut un backend ou un stockage cloud.)";
+  }
+</script>
+
+</body>
+</html>
