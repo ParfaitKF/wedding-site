@@ -1,0 +1,68 @@
+.rsvp-section {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.rsvp-card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.rsvp-card h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 32px;
+}
+
+.rsvp-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rsvp-card input,
+.rsvp-card select {
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.rsvp-card input:focus,
+.rsvp-card select:focus {
+  outline: none;
+  border-color: #f5b400;
+}
+
+.rsvp-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.rsvp-card button {
+  margin-top: 16px;
+  padding: 14px;
+  background: #f5b400;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.rsvp-card button:hover {
+  opacity: 0.9;
+}
+
+.rsvp-status {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+}

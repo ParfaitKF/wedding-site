@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { supabase } from '../lib/supabase'
+import './RSVPForm.css'
 
 export default function RSVPForm() {
   const [status, setStatus] = useState('')
@@ -25,27 +26,30 @@ export default function RSVPForm() {
   }
 
   return (
-    <section>
-      <h2>RSVP</h2>
+    <section className="rsvp-section">
+      <div className="rsvp-card">
+        <h2>RSVP</h2>
 
-      <form onSubmit={handleSubmit}>
-        <input name="name" placeholder="Nom complet" required />
-        <input name="email" type="email" placeholder="Email" />
+        <form onSubmit={handleSubmit}>
+          <input name="name" placeholder="Nom complet" required />
+          <input name="email" type="email" placeholder="Email" />
 
-        <select name="attending" required>
-          <option value="">Présence ?</option>
-          <option value="yes">Oui</option>
-          <option value="no">Non</option>
-        </select>
+          <select name="attending" required>
+            <option value="">Présence ?</option>
+            <option value="yes">Oui</option>
+            <option value="no">Non</option>
+          </select>
 
-        <label>
-          <input type="checkbox" name="plus_one" /> Je viens avec un invité
-        </label>
+          <label className="rsvp-checkbox">
+            <input type="checkbox" name="plus_one" />
+            Je viens avec un invité
+          </label>
 
-        <button type="submit">Envoyer</button>
-      </form>
+          <button type="submit">Envoyer</button>
+        </form>
 
-      {status && <p>{status}</p>}
+        {status && <p className="rsvp-status">{status}</p>}
+      </div>
     </section>
   )
 }
