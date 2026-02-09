@@ -1,0 +1,58 @@
+.info-section {
+  padding: 100px 80px;
+  box-sizing: border-box;
+}
+
+.info-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 42px;
+  margin-bottom: 60px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.info-image {
+  width: 70%;
+  aspect-ratio: 1 / 1;   /* carré */
+  object-fit: cover;
+}
+
+.info-content h3 {
+  font-size: 42px;
+  margin-bottom: 24px;
+}
+
+.info-date,
+.info-time {
+  font-size: 22px;
+  margin: 8px 0;
+}
+
+.info-location {
+  margin: 24px 0;
+}
+
+.info-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.info-links a {
+  color: #a00;
+  text-decoration: none;
+}
+
+.info-cta {
+  display: inline-block;
+  border: 2px solid #a00;
+  padding: 14px 28px;
+  text-decoration: none;
+  color: #a00;
+}
