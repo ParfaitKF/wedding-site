@@ -3,14 +3,7 @@ import './DefisPhotos.css'
 
 export default function DefisPhotos() {
 
-  const MAX_PHOTOS = 30
   const inputRef = useRef<HTMLInputElement>(null)
-  const [count, setCount] = useState(0)
-
-  const handleFiles = (files: FileList | null) => {
-    if (!files) return
-    setCount((prev) => Math.min(prev + files.length, MAX_PHOTOS))
-  }
 
   return (
     <section id="photos" className="main-section">
@@ -48,7 +41,6 @@ export default function DefisPhotos() {
           accept="image/*"
           multiple
           hidden
-          onChange={(e) => handleFiles(e.target.files)}
         />
       </div>
     </section>
