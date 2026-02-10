@@ -2,7 +2,7 @@ import './InformationSection.css'
 
 export default function InformationSection() {
   return (
-    <section id="infos" className="info-section">
+    <section id="infos" className="main-section">
       <h2 className="info-title">Informations</h2>
 
       <div className="info-grid">

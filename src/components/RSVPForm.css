@@ -1,5 +1,4 @@
 .rsvp-section {
-  padding: 100px 20px;
   display: flex;
   justify-content: center;
 }
@@ -17,6 +16,10 @@
   text-align: center;
   margin-bottom: 32px;
   font-size: 32px;
+}
+
+p {
+  text-align: center;
 }
 
 .rsvp-card form {
@@ -50,7 +53,6 @@
   margin-top: 16px;
   padding: 14px;
   background: #f5b400;
-  color: #000;
   border: none;
   border-radius: 8px;
   font-size: 16px;
@@ -65,4 +67,10 @@
   margin-top: 20px;
   text-align: center;
   font-weight: 500;
+}
+
+input,
+select {
+  background-color: #ddd;
+  accent-color: #ddd;
 }
