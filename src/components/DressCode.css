@@ -1,0 +1,17 @@
+.DressCode-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.DressCode-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 42px;
+}
+
+.DressCode-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -26,9 +26,14 @@ export default function RSVPForm() {
   }
 
   return (
-    <section className="rsvp-section">
+    <section className="main-section rsvp-section">
       <div className="rsvp-card">
-        <h2>RSVP</h2>
+        <h2>Confirmer ma présence</h2>
+        <p>Nous avons hâte de vous retrouver !
+        Si vous venez accompagné(e) ou si vous avez des restrictions alimentaires particulières, merci de bien vouloir le préciser ci-dessous.
+        Merci de confirmer votre présence avant le 10 juillet 2025.</p>
+        <br/>
+        <br/>
 
         <form onSubmit={handleSubmit}>
           <input name="name" placeholder="Nom complet" required />
