@@ -4,10 +4,9 @@
 }
 
 .rsvp-card {
-  width: 100%;
-  max-width: 480px;
+  width: 100rem;
   background: #ffffff;
-  padding: 40px;
+  padding: 4rem;
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
@@ -73,4 +72,9 @@ input,
 select {
   background-color: #ddd;
   accent-color: #ddd;
+}
+
+.hidden-check {
+  display: flex;
+  justify-content: space-around;
 }

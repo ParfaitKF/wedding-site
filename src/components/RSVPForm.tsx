@@ -4,16 +4,18 @@ import './RSVPForm.css'
 
 export default function RSVPForm() {
   const [status, setStatus] = useState('')
+  const [isAttending, setIsAttending] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const data = new FormData(e.currentTarget)
+    const ceremonies = data.getAll('ceremonies')
 
     const { error } = await supabase.from('guests').insert([{
       full_name: data.get('name'),
       email: data.get('email'),
       attending: data.get('attending') === 'yes',
-      plus_one: data.get('plus_one') === 'on'
+      ceremonies,
     }])
 
     if (error) {
@@ -26,7 +28,7 @@ export default function RSVPForm() {
   }
 
   return (
-    <section className="main-section rsvp-section">
+    <section id="rsvp" className="main-section rsvp-section">
       <div className="rsvp-card">
         <h2>Confirmer ma présence</h2>
         <p>Nous avons hâte de vous retrouver !
@@ -39,16 +41,36 @@ export default function RSVPForm() {
           <input name="name" placeholder="Nom complet" required />
           <input name="email" type="email" placeholder="Email" />
 
-          <select name="attending" required>
-            <option value="">Présence ?</option>
+          <select 
+          name="attending"
+          onChange={(e) => setIsAttending(e.target.value === 'yes')}
+          required>
+            <option value="" disabled selected hidden>Présence</option>
             <option value="yes">Oui</option>
             <option value="no">Non</option>
           </select>
 
-          <label className="rsvp-checkbox">
-            <input type="checkbox" name="plus_one" />
-            Je viens avec un invité
-          </label>
+          {isAttending && <div className='hidden-check'>
+            <label>
+              <input type="checkbox" name="ceremonies" value="Dot" />
+              Dot
+            </label>
+
+            <label>
+              <input type="checkbox" name="ceremonies" value="Mairie" />
+              Mairie
+            </label>
+
+            <label>
+              <input type="checkbox" name="ceremonies" value="Eglise" />
+              Église
+            </label>
+
+            <label>
+              <input type="checkbox" name="ceremonies" value="Soirée" />
+              Soirée
+            </label>
+          </div>}
 
           <button type="submit">Envoyer</button>
         </form>

@@ -13,5 +13,12 @@
 .DressCode-grid {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.image-colors {
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgb(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 100px;
 }

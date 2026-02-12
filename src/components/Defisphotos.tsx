@@ -1,9 +1,45 @@
 import { useRef } from 'react'
+import { supabase } from '../lib/supabase'
 import './DefisPhotos.css'
 
 export default function DefisPhotos() {
 
   const inputRef = useRef<HTMLInputElement>(null)
+
+  const handleUpload = async (files: FileList | null) => {
+    if (!files) return
+
+    /* for (const file of Array.from(files)) {
+      const fileName = `${Date.now()}-${file.name}`
+
+      const { error } = await supabase.storage
+        .from('wedding-photos')
+        .upload(fileName, file)
+
+      if (error) {
+        console.error(error)
+        alert('Erreur upload ❌')
+        return
+      }
+    }
+
+    alert('Photos envoyées ✅') */
+
+    for (const file of Array.from(files)) {
+    const fileName = `${Date.now()}-${file.name}`
+
+    const { data, error } = await supabase.storage
+      .from('wedding-photos')
+      .upload(fileName, file)
+
+    console.log('DATA:', data)
+    console.log('ERROR:', error)
+
+    if (error) {
+      alert(error.message)
+      return
+    }}
+  }
 
   return (
     <section id="photos" className="main-section">
@@ -41,6 +77,7 @@ export default function DefisPhotos() {
           accept="image/*"
           multiple
           hidden
+          onChange={(e) => handleUpload(e.target.files)}
         />
       </div>
     </section>

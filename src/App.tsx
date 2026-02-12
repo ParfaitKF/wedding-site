@@ -5,6 +5,7 @@ import InformationSection from './components/InformationSection'
 import OurStory from './components/OurStory'
 import DressCode from './components/DressCode'
 import DefisPhotos from './components/Defisphotos'
+import CountDouwn from './components/CountDown'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <OurStory />
       <DressCode />
       <RSVPForm />
+      <CountDouwn />
       <DefisPhotos />
     </>
   )

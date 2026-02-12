@@ -24,9 +24,9 @@ export default function Hero() {
     >
       <div className="overlay">
         <h1>
-            Samedi 23 Mars 2026 <br />
+            Samedi 21 Mars 2026 <br />
             Nous nous marions <br />
-            <span className="names">Kesia & Frank</span>
+            <span className="names">Kesia & Franck <br/> ( KeeF ) </span>
         </h1>
       </div>
     </section>
