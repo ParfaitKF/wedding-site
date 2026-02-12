@@ -12,9 +12,22 @@
   justify-items: center;
 }
 
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.info-image:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgb(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
 .info-image {
   width: 100%;
-  aspect-ratio: 9 / 12;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -60,4 +73,18 @@
   color: #a00;
   width: 80%;
   text-align: center;
+}
+
+ul {
+  text-align: left;
+}
+
+.indication-parcours {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.parcours {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }

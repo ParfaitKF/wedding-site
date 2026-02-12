@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-links">
         <a href="#infos">Informations</a>
-        <a href="#story">Notre Histoire</a>
+        <a href="#Ourstory">Notre Histoire</a>
         <a href="#photos">Défis photos</a>
       </div>
 
