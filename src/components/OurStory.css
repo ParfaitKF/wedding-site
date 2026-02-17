@@ -23,3 +23,7 @@
   border-radius: 20px;
   margin-bottom: 50px;
 }
+
+.Story-content {
+  text-align: justify;
+}
