@@ -9,22 +9,6 @@ export default function DefisPhotos() {
   const handleUpload = async (files: FileList | null) => {
     if (!files) return
 
-    /* for (const file of Array.from(files)) {
-      const fileName = `${Date.now()}-${file.name}`
-
-      const { error } = await supabase.storage
-        .from('wedding-photos')
-        .upload(fileName, file)
-
-      if (error) {
-        console.error(error)
-        alert('Erreur upload ❌')
-        return
-      }
-    }
-
-    alert('Photos envoyées ✅') */
-
     for (const file of Array.from(files)) {
     const fileName = `${Date.now()}-${file.name}`
 
@@ -34,6 +18,7 @@ export default function DefisPhotos() {
 
     console.log('DATA:', data)
     console.log('ERROR:', error)
+    alert("image importée")
 
     if (error) {
       alert(error.message)
@@ -67,7 +52,7 @@ export default function DefisPhotos() {
           fichiers à télécharger.
         </p>
 
-        <p className="DefisPhotos-info">Les photos ne doivent pas dépasser 20Mb.</p>
+        <p className="DefisPhotos-info">Les photos ne doivent pas dépasser 5Mb.</p>
 
         <button type="button">Télécharger</button>
 

@@ -32,7 +32,7 @@ export default function CountDouwn() {
   }, [])
 
   return (
-    <section style={{ padding: '80px 0', textAlign: 'center' }}>
+    <section style={{ padding: '20px 0', textAlign: 'center' }}>
       <h2>Temps restant</h2>
       <h1 style={{ fontSize: '3rem', letterSpacing: '2px' }}>
         {timeLeft}

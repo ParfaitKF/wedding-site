@@ -15,6 +15,23 @@
   gap: 32px;
 }
 
+@media (max-width: 768px) {
+    .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 24px;
+    background: white;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    display: none;
+  }
+}
+
+.nav-links.active {
+  display: flex;
+}
+
 .nav-links a {
   color: #f5b400;
   text-decoration: none;
@@ -27,4 +44,10 @@
   padding: 12px 20px;
   text-decoration: none;
   font-weight: 500;
+}
+
+.hamburger {
+  display: block;
+  font-size: 28px;
+  cursor: pointer;  
 }
