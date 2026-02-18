@@ -3,7 +3,7 @@ import './DressCode.css'
 export default function DressCode() {
   return (
     <section id="DressCode" className="main-section">
-      <h2 className="DressCode-title">Dressode</h2>
+      <h1 className="DressCode-title">Dressode</h1>
 
       <div className="DressCode-grid">
         Votre présence est ce qu’il y a de plus important pour nous !

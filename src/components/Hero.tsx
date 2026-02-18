@@ -23,8 +23,10 @@ export default function Hero() {
       style={{ backgroundImage: `url(${images[index]})` }}
     >
       <div className="overlay">
+        <h2>
+          Samedi 21 Mars 2026
+        </h2>
         <h1>
-            Samedi 21 Mars 2026 <br />
             Nous nous marions <br />
             <span className="names">Kesia & Franck <br/> ( KeeF ) </span>
         </h1>

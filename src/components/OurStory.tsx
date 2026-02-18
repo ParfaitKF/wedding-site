@@ -3,7 +3,7 @@ import './OurStory.css'
 export default function OurStory() {
   return (
     <section id="Ourstory" className="main-section">
-      <h2 className="Story-title">OurStory</h2>
+      <h1 className="Story-title">OurStory</h1>
 
       <div className="Story-grid">
         <img

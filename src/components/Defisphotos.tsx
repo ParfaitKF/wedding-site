@@ -28,7 +28,7 @@ export default function DefisPhotos() {
 
   return (
     <section id="photos" className="main-section">
-      <h2 className="DefisPhotos-title">Défis photos</h2>
+      <h1 className="DefisPhotos-title">Défis photos</h1>
 
       <p className="DefisPhotos-text">
         Attrapez votre smartphone et aidez-nous à saisir l’ambiance de la journée
