@@ -72,7 +72,7 @@ export default function RSVPForm() {
             </label>
           </div>}
 
-          <button type="submit">Envoyer</button>
+          <button type="submit" className="nav-cta">Envoyer</button>
         </form>
 
         {status && <p className="rsvp-status">{status}</p>}

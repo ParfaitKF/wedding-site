@@ -1,4 +1,4 @@
-import './GiftsSection.css'
+import './GiftSection.css'
 
 export default function GiftsSection() {
   return (
@@ -13,19 +13,21 @@ export default function GiftsSection() {
           <h2>Dons & Cadeaux</h2>
 
           <p>
-            Votre présence est notre plus beau cadeau.  
-            Cependant, si vous souhaitez nous bénir davantage,
-            vous pouvez contribuer via les moyens suivants :
+            À l’occasion de notre mariage,
+            votre présence est déjà un merveilleux cadeau.
+            Toutefois, si vous souhaitez nous offrir quelque chose,
+            le cadeau est libre, selon votre bon plaisir et vos moyens.
+            <br/>
+            Cadeaux recommendés : Enveloppe avec contribution en especes ou chèques!
           </p>
 
           <div className="payment-box">
-            <h3>Orange Money</h3>
-            <p>+237 6 XX XX XX XX</p>
+            <img/>
+            <p>+237 6 72 59 16 49  </p>
           </div>
-
           <div className="payment-box">
-            <h3>MTN MoMo</h3>
-            <p>+237 6 XX XX XX XX</p>
+            <img/>
+            <p>+237 6 90 96 79 23</p>
           </div>
         </div>
 

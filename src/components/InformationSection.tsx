@@ -51,7 +51,7 @@ export default function InformationSection() {
         <br/>
         <div className="info-grid">
           <img
-            src="/images/info2.jpeg"
+            src="/images/hexagone-photo1.png"
             alt="Kesia & Frank"
             className="info-image"
           />
@@ -107,7 +107,7 @@ export default function InformationSection() {
             </a>
           </div>
           <img
-              src="/images/info3.jpeg"
+              src="/images/image heart-2.png"
               alt="Kesia & Frank"
               className="info-image"
           />
@@ -116,7 +116,7 @@ export default function InformationSection() {
       <section id="infos3" className="main-section">
         <div className="info-grid">
           <img
-            src="/images/info4.jpeg"
+            src="/images/hexagone-photo2.png"
             alt="Kesia & Frank"
             className="info-image"
           />
