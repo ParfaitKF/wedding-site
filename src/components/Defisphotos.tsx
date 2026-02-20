@@ -54,7 +54,7 @@ export default function DefisPhotos() {
 
         <p className="DefisPhotos-info">Les photos ne doivent pas dépasser 5Mb.</p>
 
-        <button type="button">Télécharger</button>
+        <button className="Button-Upload" type="button">Télécharger</button>
 
         <input
           ref={inputRef}
