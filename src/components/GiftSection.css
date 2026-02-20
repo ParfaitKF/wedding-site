@@ -11,9 +11,19 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .gifts-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gifts-image {
+  margin: auto;
+}
+
 .gifts-image img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  width: 20rem; 
+  height: auto;
   object-fit: cover;
 }
 
@@ -24,8 +34,29 @@
 }
 
 .payment-box {
-  margin-top: 20px;
+  display: flex;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 30px;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  font-size: clamp(1vw, 3vw, 1rem);
+  font-weight: 500;
+}
+
+.payment-box img {
+  width: 2rem;
+  height: auto;
+  border-radius: 100%;
+}
+
+.buttons-line {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.gifts-section {
+  padding: 20px;
 }

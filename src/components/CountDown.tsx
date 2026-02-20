@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
+import "./CountDown.css"
 
 const weddingDate = new Date('2026-03-23T00:00:00')
 
@@ -34,7 +35,7 @@ export default function CountDouwn() {
   return (
     <section style={{ padding: '20px 0', textAlign: 'center' }}>
       <h2>Temps restant</h2>
-      <h1 style={{ fontSize: '3rem', letterSpacing: '2px' }}>
+      <h1 className="time-left" style={{ fontSize: '3rem', letterSpacing: '2px' }}>
         {timeLeft}
       </h1>
     </section>

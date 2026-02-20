@@ -1,0 +1,11 @@
+.time-left {
+  display: block;
+  background-image: url("../../public/images/Board.png");
+  object-fit: cover;
+  background-size: 22rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: center;
+  align-items: center;
+  height: 6.6rem;
+}
