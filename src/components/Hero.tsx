@@ -23,11 +23,12 @@ export default function Hero() {
       style={{ backgroundImage: `url(${images[index]})` }}
     >
       <div className="overlay">
-        <h1>
-            Samedi 21 Mars 2026 <br />
-            Nous nous marions <br />
-            <span className="names">Kesia & Franck <br/> ( KeeF ) </span>
-        </h1>
+        <div style={{display: 'flex', flexDirection: 'column'}}>
+          Samedi 21 Mars 2026
+          <span style={{fontSize: 'clamp(2rem, 5vw, 4rem)', fontWeight: 'bold'}}>Nous nous marions</span>
+          <span className="names">Kesia & Franck <br/> <span style={{color : '#F7BD16'}}>( KeeF )</span></span>
+        </div>
+        <img className="border-deco" src="./images/Stroke-wedding-decoration.png"/>
       </div>
     </section>
   )

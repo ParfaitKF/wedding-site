@@ -6,18 +6,37 @@ import OurStory from './components/OurStory'
 import DressCode from './components/DressCode'
 import DefisPhotos from './components/Defisphotos'
 import CountDouwn from './components/CountDown'
+import Reveal from './components/Reveal'
+import GiftSection from './components/GiftSection'
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <InformationSection />
-      <OurStory />
-      <DressCode />
-      <RSVPForm />
-      <CountDouwn />
-      <DefisPhotos />
+      <Reveal>
+        <Hero />
+      </Reveal>
+      <Reveal>
+        <InformationSection />
+      </Reveal>
+      <Reveal>
+        <OurStory />
+      </Reveal>
+      <Reveal>
+        <DressCode />
+      </Reveal>
+      <Reveal>
+        <RSVPForm />
+      </Reveal>
+      <Reveal>
+        <CountDouwn />
+      </Reveal>
+      <Reveal>
+        <GiftSection />
+      </Reveal>
+      <Reveal>
+        <DefisPhotos />
+      </Reveal>
     </>
   )
 }

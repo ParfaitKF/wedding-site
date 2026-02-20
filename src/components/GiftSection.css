@@ -1,0 +1,31 @@
+.gifts-section {
+  padding: 100px 20px;
+}
+
+.gifts-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.gifts-image img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.gifts-content h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.payment-box {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+}

@@ -33,7 +33,7 @@ export default function RSVPForm() {
         <h2>Confirmer ma présence</h2>
         <p>Nous avons hâte de vous retrouver !
         Si vous venez accompagné(e) ou si vous avez des restrictions alimentaires particulières, merci de bien vouloir le préciser ci-dessous.
-        Merci de confirmer votre présence avant le 10 juillet 2025.</p>
+        Merci de confirmer votre présence avant le 21 Mars 2026.</p>
         <br/>
         <br/>
 
@@ -72,7 +72,7 @@ export default function RSVPForm() {
             </label>
           </div>}
 
-          <button type="submit">Envoyer</button>
+          <button type="submit" className="nav-cta">Envoyer</button>
         </form>
 
         {status && <p className="rsvp-status">{status}</p>}

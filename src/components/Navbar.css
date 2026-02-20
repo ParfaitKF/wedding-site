@@ -3,16 +3,23 @@
   top: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 24px 48px;
+  padding: 10px 48px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   z-index: 10;
+  background-color: #F9F3F4;
 }
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 32px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;  
 }
 
 @media (max-width: 768px) {
@@ -26,6 +33,12 @@
     gap: 20px;
     display: none;
   }
+
+  .hamburger {
+    display: flex;
+    font-size: 28px;
+    cursor: pointer; 
+  }
 }
 
 .nav-links.active {
@@ -33,21 +46,26 @@
 }
 
 .nav-links a {
-  color: #f5b400;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
 }
 
 .nav-cta {
-  color: #f5b400;
-  border: 2px solid #f5b400;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 30px;
   padding: 12px 20px;
   text-decoration: none;
   font-weight: 500;
 }
 
-.hamburger {
-  display: block;
-  font-size: 28px;
-  cursor: pointer;  
+.nav-cta:hover {
+  color: black;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.5s;
 }

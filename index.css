@@ -1,10 +1,14 @@
-body {
-  background: #ffffff;
-  color: #000;
-}
-
 :root {
     color-scheme: light;
+    --primary-color: #831523;
+    --secondary-color: #F7BD16;
+    --primary-container: #F9F3F4;
+    --text-color: rgb(63, 63, 63);
+}
+
+body {
+  background: #ffffff;
+  color: var(--text-color);
 }
 
 #root {
@@ -16,6 +20,7 @@ body {
 .main-section {
   padding: 2vw 15%;
   box-sizing: border-box;
+  padding-bottom: 4rem;
 }
 
 @media (max-width: 768px ) {
@@ -23,4 +28,20 @@ body {
     padding: 50px 5%;
     box-sizing: border-box;
   }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1,
+h2 {
+  color: brown;
 }

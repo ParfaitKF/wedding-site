@@ -10,16 +10,16 @@ export default function Navbar() {
         <a href="#infos">Informations</a>
         <a href="#Ourstory">Notre Histoire</a>
         <a href="#photos">Défis photos</a>
-        <a href="#rsvp" className="nav-cta">
-          Confirmer ma présence
-        </a>
       </div>
       <div 
-        className='hamburger'
+        className = 'hamburger'
         onClick={() => setOpen(!open)}
       >
         ☰
       </div>
+      <a href="#rsvp" className="nav-cta">
+        Confirmer ma présence
+      </a>
     </nav>
   )
 }
