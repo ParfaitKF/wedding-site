@@ -7,6 +7,7 @@ import DressCode from './components/DressCode'
 import DefisPhotos from './components/Defisphotos'
 import CountDouwn from './components/CountDown'
 import Reveal from './components/Reveal'
+import GiftsSection from './components/GiftSection'
 
 function App() {
   return (

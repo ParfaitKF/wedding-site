@@ -5,6 +5,9 @@ body {
 
 :root {
     color-scheme: light;
+    --primary-color: #831523;
+    --secondary-color: #F7BD16;
+    --primary-container: #F9F3F4;
 }
 
 #root {
@@ -40,3 +43,4 @@ h1,
 h2 {
   color: brown;
 }
+
