@@ -8,15 +8,15 @@ export default function InformationSection() {
         <div className="info-grid">
           <div className="info-content">
             <h3>
-              Dote ● 14 Mars 2026 ● 13h-16h
+              Dote ● 18 Mars 2026 ● 13h-16h
             </h3>
             <p className='titre-sous-section'>Loum Carrefour CAMOCO et ensuite prendre la moto Quartier 202 au niveau de l'internat</p>
             <div className='parcours'>
               <ul>
                 <b>Venant de Yaoundé</b>
-                <li className='indication-parcours'>Yaoundé–Douala</li>
-                <li className='indication-parcours'>ensuite Douala–Loum (rond point Décidé)
-                Prévoir 13 000 FCFA aller et retour.</li>
+                <li className='indication-parcours'>Yaoundé–Nkonssamba</li>
+                <li className='indication-parcours'>ensuite Nkonssamba–Loum (rond point Décidé)
+                Prévoir 15 000 FCFA aller et retour.</li>
               </ul>
               <ul>
                 <b>Venant de Douala</b>
@@ -31,8 +31,17 @@ export default function InformationSection() {
             </div>
 
             <div className="info-links">
-              <a href="#" className='icon-button'>Voir la carte <img src="./images/location_on.svg" width="24" height="24"/></a>
-              <a href="#" className='icon-button'>Ajouter au calendrier <img src="./images/Calendar.svg" width="24" height="24"/></a>
+              <a 
+              href="#"
+              className='icon-button'>
+                Voir la carte
+                <img src="./images/location_on.svg" width="24" height="24"/></a>
+              <a className='icon-button'
+                href="//www.google.com/calendar/render?action=TEMPLATE&text=Dote+Kesia+et+Franck&dates=20260323T130000/20260323T160000&details=Dote+Kesia+et+Franck&location=Loum"
+                target="_blank"
+                rel="noopener noreferrer"
+              > Ajouter au calendrier 
+              <img src="./images/Calendar.svg" width="24" height="24"/></a>
             </div>
 
             <a href="#rsvp" className="info-cta">
@@ -66,7 +75,14 @@ export default function InformationSection() {
 
             <div className="info-links">
               <a href="#" className='icon-button'>Voir la carte <img src="./images/location_on.svg" width="24" height="24"/></a>
-              <a href="#" className='icon-button'>Ajouter au calendrier <img src="./images/Calendar.svg" width="24" height="24"/></a>
+              <a className='icon-button'
+                href="https://www.google.com/calendar/render?action=TEMPLATE&text=Mariage+Kesia+%26+Frank&dates=20260323T083000/20260323T220000&details=Mariage+Civil+:+08h30%0AB%C3%A9n%C3%A9diction+nuptiale+:+13h-16h%0ACoktail+:+17h-22h&location=Aum%C3%B4nerie+Protestante+Universitaire+(APU),+VG32%2B3Q5,+Yaound%C3%A9,+Cameroon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ajouter au calendrier
+                <img src="./images/Calendar.svg" width="24" height="24"/>
+              </a>
             </div>
 
             <a href="#rsvp" className="info-cta">
@@ -98,8 +114,22 @@ export default function InformationSection() {
               </div>
 
             <div className="info-links">
-              <a href="#" className='icon-button'>Voir la carte <img src="./images/location_on.svg" width="24" height="24"/></a>
-              <a href="#" className='icon-button'>Ajouter au calendrier <img src="./images/Calendar.svg" width="24" height="24"/></a>
+              <a 
+              href="https://maps.app.goo.gl/WYSj1rfrpyxzZotY6" 
+              target='_blank'
+              rel = "noopener noreferrer"
+              className='icon-button'>
+                Voir la carte 
+                <img src="./images/location_on.svg" width="24" height="24"/>
+              </a>
+              <a className='icon-button'
+                href="https://www.google.com/calendar/render?action=TEMPLATE&text=Mariage+Kesia+%26+Frank&dates=20260323T083000/20260323T220000&details=Mariage+Civil+:+08h30%0AB%C3%A9n%C3%A9diction+nuptiale+:+13h-16h%0ACoktail+:+17h-22h&location=Aum%C3%B4nerie+Protestante+Universitaire+(APU),+VG32%2B3Q5,+Yaound%C3%A9,+Cameroon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ajouter au calendrier
+                <img src="./images/Calendar.svg" width="24" height="24"/>
+              </a>
             </div>
 
             <a href="#rsvp" className="info-cta">
@@ -131,8 +161,22 @@ export default function InformationSection() {
             </p>
 
             <div className="info-links">
-              <a href="#" className='icon-button'>Voir la carte <img src="./images/location_on.svg" width="24" height="24"/></a>
-              <a href="#" className='icon-button'>Ajouter au calendrier <img src="./images/Calendar.svg" width="24" height="24"/></a>
+              <a 
+              href="https://maps.app.goo.gl/WYSj1rfrpyxzZotY6" 
+              target='_blank'
+              rel = "noopener noreferrer"
+              className='icon-button'>
+                Voir la carte 
+                <img src="./images/location_on.svg" width="24" height="24"/>
+              </a>
+              <a className='icon-button'
+                href="https://www.google.com/calendar/render?action=TEMPLATE&text=Mariage+Kesia+%26+Frank&dates=20260323T083000/20260323T220000&details=Mariage+Civil+:+08h30%0AB%C3%A9n%C3%A9diction+nuptiale+:+13h-16h%0ACoktail+:+17h-22h&location=Aum%C3%B4nerie+Protestante+Universitaire+(APU),+VG32%2B3Q5,+Yaound%C3%A9,+Cameroon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ajouter au calendrier
+                <img src="./images/Calendar.svg" width="24" height="24"/>
+              </a>
             </div>
 
             <a href="#rsvp" className="info-cta">

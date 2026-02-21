@@ -22,11 +22,11 @@ export default function GiftsSection() {
           <div className='buttons-line'>
             <div className="payment-box">
               <img src="./images/OM.png"/>
-              +237 6 72 59 16 49
+              +237 6 90 96 79 23
             </div>
             <div className="payment-box">
               <img src="./images/Momo.png"/>
-              +237 6 90 96 79 23
+              +237 6 72 59 16 49 
             </div>
           </div>
         </div>

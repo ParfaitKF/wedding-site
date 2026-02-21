@@ -7,7 +7,7 @@ export default function OurStory() {
 
       <div className="Story-grid">
         <img
-          src="/images/Ourstory.jpeg"
+          src="/images/Photo-Story.png"
           alt="Kesia & Frank"
           className="Story-image"
         />
