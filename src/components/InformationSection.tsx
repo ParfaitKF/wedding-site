@@ -74,7 +74,12 @@ export default function InformationSection() {
             </p>
 
             <div className="info-links">
-              <a href="#" className='icon-button'>Voir la carte <img src="./images/location_on.svg" width="24" height="24"/></a>
+              <a href="https://maps.app.goo.gl/v9fJkUY8jqYJqj7E8"
+              target='_blank'
+              rel = "noopener noreferrer"
+              className='icon-button'>
+                Voir la carte 
+              <img src="./images/location_on.svg" width="24" height="24"/></a>
               <a className='icon-button'
                 href="https://www.google.com/calendar/render?action=TEMPLATE&text=Mariage+Kesia+%26+Frank&dates=20260323T083000/20260323T220000&details=Mariage+Civil+:+08h30%0AB%C3%A9n%C3%A9diction+nuptiale+:+13h-16h%0ACoktail+:+17h-22h&location=Aum%C3%B4nerie+Protestante+Universitaire+(APU),+VG32%2B3Q5,+Yaound%C3%A9,+Cameroon"
                 target="_blank"
