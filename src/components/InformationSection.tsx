@@ -8,14 +8,14 @@ export default function InformationSection() {
         <div className="info-grid">
           <div className="info-content">
             <h3>
-              Dote ● 18 Mars 2026 ● 13h-16h
+              Dote ● 11 Avril 2026 ● 16H
             </h3>
             <p className='titre-sous-section'>Loum Carrefour CAMOCO et ensuite prendre la moto Quartier 202 au niveau de l'internat</p>
             <div className='parcours'>
               <ul>
                 <b>Venant de Yaoundé</b>
                 <li className='indication-parcours'>Yaoundé–Nkonssamba</li>
-                <li className='indication-parcours'>ensuite Nkonssamba–Loum (rond point Décidé)
+                <li className='indication-parcours'>ensuite Nkonssamba–Loum
                 Prévoir 15 000 FCFA aller et retour.</li>
               </ul>
               <ul>
@@ -37,7 +37,7 @@ export default function InformationSection() {
                 Voir la carte
                 <img src="./images/location_on.svg" width="24" height="24"/></a>
               <a className='icon-button'
-                href="//www.google.com/calendar/render?action=TEMPLATE&text=Dote+Kesia+et+Franck&dates=20260323T130000/20260323T160000&details=Dote+Kesia+et+Franck&location=Loum"
+                href="//www.google.com/calendar/render?action=TEMPLATE&text=Dote+Kesia+et+Franck&dates=20260411T130000/20260411T160000&details=Dote+Kesia+et+Franck&location=Loum"
                 target="_blank"
                 rel="noopener noreferrer"
               > Ajouter au calendrier 
@@ -66,8 +66,8 @@ export default function InformationSection() {
           />
           <div className="info-content">
             <h3>Ceremonie Civile</h3>
-            <p className="info-date">21 Mars 2026</p>
-            <p className="info-time">08:30</p> 
+            <p className="info-date">18 Avril 2026</p>
+            <p className="info-time">08:30</p>
 
             <p className="info-location">
               Mairie de Yaoundé 3 effoulan
@@ -81,7 +81,7 @@ export default function InformationSection() {
                 Voir la carte 
               <img src="./images/location_on.svg" width="24" height="24"/></a>
               <a className='icon-button'
-                href="https://www.google.com/calendar/render?action=TEMPLATE&text=Mariage+Kesia+%26+Frank&dates=20260323T083000/20260323T220000&details=Mariage+Civil+:+08h30%0AB%C3%A9n%C3%A9diction+nuptiale+:+13h-16h%0ACoktail+:+17h-22h&location=Aum%C3%B4nerie+Protestante+Universitaire+(APU),+VG32%2B3Q5,+Yaound%C3%A9,+Cameroon"
+                href="https://www.google.com/calendar/render?action=TEMPLATE&text=Mariage+Kesia+%26+Frank&dates=20260418T083000/20260418T220000&details=Mariage+Civil+:+08h30%0AB%C3%A9n%C3%A9diction+nuptiale+:+13h-16h%0ACoktail+:+17h-22h&location=Aum%C3%B4nerie+Protestante+Universitaire+(APU),+VG32%2B3Q5,+Yaound%C3%A9,+Cameroon"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -100,7 +100,7 @@ export default function InformationSection() {
         <div className="info-grid">
           <div className="info-content">
             <h3>Bénédiction nuptiale</h3>
-            <p className="info-date">21 Mars 2026</p>
+            <p className="info-date">18 Avril 2026</p>
             <p className="info-time">13h-16h</p>
 
             <div className="info-location">
@@ -128,7 +128,7 @@ export default function InformationSection() {
                 <img src="./images/location_on.svg" width="24" height="24"/>
               </a>
               <a className='icon-button'
-                href="https://www.google.com/calendar/render?action=TEMPLATE&text=Mariage+Kesia+%26+Frank&dates=20260323T083000/20260323T220000&details=Mariage+Civil+:+08h30%0AB%C3%A9n%C3%A9diction+nuptiale+:+13h-16h%0ACoktail+:+17h-22h&location=Aum%C3%B4nerie+Protestante+Universitaire+(APU),+VG32%2B3Q5,+Yaound%C3%A9,+Cameroon"
+                href="https://www.google.com/calendar/render?action=TEMPLATE&text=Mariage+Kesia+%26+Frank&dates=20260418T083000/20260418T220000&details=Mariage+Civil+:+08h30%0AB%C3%A9n%C3%A9diction+nuptiale+:+13h-16h%0ACoktail+:+17h-22h&location=Aum%C3%B4nerie+Protestante+Universitaire+(APU),+VG32%2B3Q5,+Yaound%C3%A9,+Cameroon"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -158,7 +158,7 @@ export default function InformationSection() {
 
           <div className="info-content">
             <h3>Coktail</h3>
-            <p className="info-date">21 Mars 2026</p>
+            <p className="info-date">18 Avril 2026</p>
             <p className="info-time">17h - 22h</p>
 
             <p className="info-location">
@@ -175,7 +175,7 @@ export default function InformationSection() {
                 <img src="./images/location_on.svg" width="24" height="24"/>
               </a>
               <a className='icon-button'
-                href="https://www.google.com/calendar/render?action=TEMPLATE&text=Mariage+Kesia+%26+Frank&dates=20260323T083000/20260323T220000&details=Mariage+Civil+:+08h30%0AB%C3%A9n%C3%A9diction+nuptiale+:+13h-16h%0ACoktail+:+17h-22h&location=Aum%C3%B4nerie+Protestante+Universitaire+(APU),+VG32%2B3Q5,+Yaound%C3%A9,+Cameroon"
+                href="https://www.google.com/calendar/render?action=TEMPLATE&text=Mariage+Kesia+%26+Frank&dates=20260418T083000/20260418T220000&details=Mariage+Civil+:+08h30%0AB%C3%A9n%C3%A9diction+nuptiale+:+13h-16h%0ACoktail+:+17h-22h&location=Aum%C3%B4nerie+Protestante+Universitaire+(APU),+VG32%2B3Q5,+Yaound%C3%A9,+Cameroon"
                 target="_blank"
                 rel="noopener noreferrer"
               >
