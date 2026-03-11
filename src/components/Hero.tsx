@@ -24,7 +24,7 @@ export default function Hero() {
     >
       <div className="overlay">
         <div style={{display: 'flex', flexDirection: 'column'}}>
-          Samedi 21 Mars 2026
+          18 Avril 2026
           <span style={{fontSize: 'clamp(2rem, 5vw, 4rem)', fontWeight: 'bold'}}>Nous nous marions</span>
           <span className="names">Kesia & Franck <br/> <span style={{color : '#F7BD16'}}>( KeeF )</span></span>
         </div>
