@@ -23,10 +23,12 @@ export default function GiftsSection() {
             <div className="payment-box">
               <img src="./images/OM.png"/>
               +237 6 90 96 79 23
+              <br/> ( Franck Bougeme )
             </div>
             <div className="payment-box">
               <img src="./images/Momo.png"/>
-              +237 6 72 59 16 49 
+              +237 6 77 53 86 20
+              <br/>( Nouthy Tchawa Franck )
             </div>
           </div>
         </div>
