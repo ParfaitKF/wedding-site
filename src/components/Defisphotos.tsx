@@ -65,6 +65,10 @@ export default function DefisPhotos() {
           onChange={(e) => handleUpload(e.target.files)}
         />
       </div>
+      <div className='ref'>
+        Site par <a href='https://www.linkedin.com/in/fotso-parfait-216373211/'> Parfait Fotso </a>
+        images par <a href='#'>  </a>
+      </div>
     </section>
   )
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import "./CountDown.css"
 
-const weddingDate = new Date('2026-03-23T00:00:00')
+const weddingDate = new Date('2026-04-18T00:00:00')
 
 export default function CountDouwn() {
   const [timeLeft, setTimeLeft] = useState('')
@@ -38,6 +38,7 @@ export default function CountDouwn() {
       <h1 className="time-left" style={{ fontSize: '3rem', letterSpacing: '2px' }}>
         {timeLeft}
       </h1>
+      Jour(s) : Heure(s) : Minute(s) : Seconde(s)
     </section>
   )
 }
