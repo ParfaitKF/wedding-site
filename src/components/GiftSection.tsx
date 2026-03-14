@@ -28,7 +28,7 @@ export default function GiftsSection() {
             <div className="payment-box">
               <img src="./images/Momo.png"/>
               +237 6 77 53 86 20
-              <br/>( Nouthy Tchawa Franck )
+              <br/>( Noutchy Tchawa Franck )
             </div>
           </div>
         </div>
