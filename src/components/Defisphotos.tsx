@@ -67,7 +67,7 @@ export default function DefisPhotos() {
       </div>
       <div className='ref'>
         Site par <a href='https://www.linkedin.com/in/fotso-parfait-216373211/'> Parfait Fotso </a>
-        images par <a href='#'>  </a>
+        images par <a href='#'> Nana Gael </a>
       </div>
     </section>
   )
